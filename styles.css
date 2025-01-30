@@ -73,7 +73,7 @@ img {
 
 /* Estilo para os links do menu */
 .elementor-nav-menu a {
-    background-color: white; /* Fundo branco */
+    background-color: #f0f0f0; /* Fundo cinza claro */
     padding: 10px 15px; /* Espaçamento interno */
     color: #333; /* Cor do texto */
     text-decoration: none; /* Remove underline */
