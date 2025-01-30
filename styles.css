@@ -60,25 +60,24 @@ img {
     height: auto; /* Mantém a proporção da imagem */
     display: block;
     margin: 0 auto;
+    background-color: transparent; /* Garantindo que o fundo da imagem seja transparente */
 }
 
-.image-large {
-    width: 2048px; /* Tamanho dobrado da imagem original */
-    height: 1402px; /* Tamanho dobrado da altura original */
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da tela */
-    height: auto;
-    display: block;
-    margin: 0 auto;
+/* Garantir que qualquer fundo branco seja removido, mesmo que a imagem tenha bordas */
+img[src*="png-clipart-star-star-thumbnail"] {
+    background-color: transparent !important; /* Forçando transparência para as estrelas */
+    border: none !important; /* Removendo qualquer borda que possa ser visível */
 }
 
-/* Estilos para as imagens de estrelas com fundo branco */
-.elementor-icon img {
-    background-color: transparent !important; /* Força a imagem a ter fundo transparente */
-    display: block; /* Remove o espaço extra ao redor da imagem */
-    border: none; /* Remove bordas */
+/* Corrigindo a imagem da estrela */
+img.star-image {
+    width: 40px;
+    height: 40px;
+    object-fit: contain; /* Garantindo que a imagem se ajuste corretamente sem distorções */
+    background-color: transparent !important; /* Forçando o fundo transparente */
 }
 
-/* Estilo para os links do menu */
+/* Outros estilos para o conteúdo e navegação */
 .elementor-nav-menu a {
     background-color: #f0f0f0; /* Fundo cinza claro */
     padding: 10px 15px; /* Espaçamento interno */
@@ -88,13 +87,11 @@ img {
     transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
 }
 
-/* Alteração de cor do texto e fundo ao passar o mouse */
 .elementor-nav-menu a:hover {
     background-color: #4CAF50; /* Cor de fundo verde ao passar o mouse */
     color: white; /* Cor do texto branca ao passar o mouse */
 }
 
-/* Estilo para os itens do menu ativo */
 .elementor-nav-menu .current-menu-item a {
     background-color: #4CAF50; /* Cor de fundo verde para o item ativo */
     color: white; /* Cor do texto branca para o item ativo */
