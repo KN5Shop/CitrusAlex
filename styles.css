@@ -70,3 +70,25 @@ img {
     display: block;
     margin: 0 auto;
 }
+
+/* Estilo para os links do menu */
+.elementor-nav-menu a {
+    background-color: white; /* Fundo branco */
+    padding: 10px 15px; /* Espaçamento interno */
+    color: #333; /* Cor do texto */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+/* Alteração de cor do texto e fundo ao passar o mouse */
+.elementor-nav-menu a:hover {
+    background-color: #4CAF50; /* Cor de fundo verde ao passar o mouse */
+    color: white; /* Cor do texto branca ao passar o mouse */
+}
+
+/* Estilo para os itens do menu ativo */
+.elementor-nav-menu .current-menu-item a {
+    background-color: #4CAF50; /* Cor de fundo verde para o item ativo */
+    color: white; /* Cor do texto branca para o item ativo */
+}
