@@ -71,6 +71,13 @@ img {
     margin: 0 auto;
 }
 
+/* Estilos para as imagens de estrelas com fundo branco */
+.elementor-icon img {
+    background-color: transparent !important; /* Força a imagem a ter fundo transparente */
+    display: block; /* Remove o espaço extra ao redor da imagem */
+    border: none; /* Remove bordas */
+}
+
 /* Estilo para os links do menu */
 .elementor-nav-menu a {
     background-color: #f0f0f0; /* Fundo cinza claro */
